@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f5f0ea;
+    color: #5c4a3d;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* INTRO */
+.intro {
+    background-color: #cbb7a5;
+    color: white;
+}
+
+/* EDUCATION */
+.education {
+    background-color: #f0e6dc;
+}
+
+/* SKILLS */
+.skills {
+    background-color: #cbb7a5;
+    color: white;
+}
+
+.skill-bar {
+    background: #eee;
+    border-radius: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.skill-fill {
+    background: #5c4a3d;
+    padding: 5px;
+    color: white;
+    text-align: right;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #f0e6dc;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5c4a3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e332a;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #cbb7a5;
+    color: white;
+    padding: 30px;
+}
