@@ -1,18 +1,15 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-document.getElementById("feedbackForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const nameValue = document.getElementById("fname").value;
-    const emailValue = document.getElementById("femail").value;
-    const messageValue = document.getElementById("fmsg").value;
-
-    fetch("https://zaiba-backend.onrender.com/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: nameValue, email: emailValue, message: messageValue })
-    })
-    .then(res => res.text())
-    .then(data => alert(data))
-    .catch(err => { console.log(err); alert("Error ❌"); });
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Server is running");
 });
+
+const PORT = 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
