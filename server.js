@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", (event) => {
 document.getElementById("feedbackForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -13,4 +14,5 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
     .then(res => res.text())
     .then(data => alert(data))
     .catch(err => { console.log(err); alert("Error ❌"); });
+});
 });
