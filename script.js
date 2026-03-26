@@ -5,7 +5,7 @@ function submitForm() {
     let feedback = document.getElementById("feedback").value;
 
     if (name && phone && email && feedback) {
-        document.getElementById("message").innerHTML =
+        document.getElementById("message").innerHTML =    
             "Thank you for your feedback, " + name + "!";
     } else {
         document.getElementById("message").innerHTML =
@@ -16,4 +16,4 @@ fetch("https://neha-portfolio-project-2.onrender.com/contact", {
   method: "GET"
 })
 .then(res => res.text())
-.then(data => console.log(data)); 
+.then(data => console.log(data));
