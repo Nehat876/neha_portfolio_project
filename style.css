@@ -4,12 +4,10 @@ body {
     background-color: #f5f0ea;
     color: #5c4a3d;
 }
-
 section {
     padding: 60px 20px;
     text-align: center;
 }
-
 .container {
     max-width: 900px;
     margin: auto;
@@ -17,7 +15,7 @@ section {
 
 /* INTRO */
 .intro {
-    background-color: #cbb7a5;
+    background-color: #0d0c0a;
     color: white;
 }
 
