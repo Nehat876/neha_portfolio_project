@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Georgia', serif;
     background-color: #f5f0ea;
-    color: #5c4a3d;
+    color: #a32668;
 }
 section {
     padding: 60px 20px;
@@ -15,19 +15,19 @@ section {
 
 /* INTRO */
 .intro {
-    background-color: #0d0c0a;
-    color: white;
+    background-color: #8a5c76;
+    color: rgb(156, 130, 174);
 }
 
 /* EDUCATION */
 .education {
-    background-color: #f0e6dc;
+    background-color: #8c6034;
 }
 
 /* SKILLS */
 .skills {
-    background-color: #cbb7a5;
-    color: white;
+    background-color: #3e4980;
+    color: rgb(155, 58, 116);
 }
 
 .skill-bar {
@@ -66,10 +66,10 @@ button {
 }
 
 button:hover {
-    background-color: #131110;
+    background-color: #d0591e;
 }
 .footer {
-    background-color: #cbb7a5;
-    color: white;
+    background-color: #5e3b1d;
+    color: rgb(144, 44, 44);
     padding: 30px;
 }
