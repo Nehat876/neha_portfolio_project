@@ -45,7 +45,6 @@ section {
     color: white;
     text-align: right;
 }
-
 /* CONTACT */
 .contact {
     background-color: #f0e6dc;
@@ -69,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #fcf3ed;
+    background-color: #131110;
 }
 .footer {
     background-color: #cbb7a5;
