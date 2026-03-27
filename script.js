@@ -1,18 +1,12 @@
-function submitForm() {
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
-    let feedback = document.getElementById("feedback").value;
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    if (name && phone && email && feedback) {
-        document.getElementById("message").innerHTML =    
-            "Thank you for your feedback, " + name + "!";
-    } else {
-        document.getElementById("message").innerHTML =
-            "Please fill all fields!";
-    }
-}
-fetch("https://neha-portfolio-project-2.onrender.com/feedback", {
+    const nameValue = document.getElementById("fname").value;
+    const emailValue = document.getElementById("femail").value;
+    const messageValue = document.getElementById("fmsg").value;
+
+    
+    fetch("https://neha-portfolio-project-2.onrender.com/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: nameValue, email: emailValue, message: messageValue })
