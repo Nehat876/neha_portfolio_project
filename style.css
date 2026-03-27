@@ -69,10 +69,8 @@ button {
 }
 
 button:hover {
-    background-color: #3e332a;
+    background-color: #fcf3ed;
 }
-
-/* FOOTER */
 .footer {
     background-color: #cbb7a5;
     color: white;
