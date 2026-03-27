@@ -12,8 +12,13 @@ function submitForm() {
             "Please fill all fields!";
     }
 }
-fetch("https://neha-portfolio-project-2.onrender.com/contact", {
-  method: "GET"
-})
-.then(res => res.text())
-.then(data => console.log(data));
+fetch("https://neha-portfolio-project-2.onrender.com/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: nameValue, email: emailValue, message: messageValue })
+    }) 
+    .then(res => res.text())
+    .then(data => alert(data))
+    .catch(err => { console.log(err); alert("Error ❌"); });
+});
+  
